@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Playfair+Display|Ubuntu:300&display=swap&subset=cyrillic');
+
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/*--------------------*/
+
+body {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1061px;
+    margin: 0 auto;
+}
+
+/****************Header**************/
+.header-content {
+    padding: 68px 0 0 0;
+    display: flex;
+}
+
+.header-content__logo {
+    font-family: 'Inconsolata', monospace;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: #000000;
+}
+
+.header-content__logo a {
+    color: #000000;
+}
+
+.header-content__logo a:active {
+    color: #626262;
+}
+
+.header-content__nav {
+    margin: 0 0 0 371px;
+    padding: 7px 0 5px 0;
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+}
+
+.nav__list li {
+    margin: 0 100px 0 0;
+}
+
+.nav__list li a {
+    color: #626262;
+}
+
+.nav__list li a:hover {
+    color: #000;
+}
+
+.nav__list li:last-child {
+    margin: 0;
+}
+
+/*=====================End Header=========================*/
+
+/*******************Post Base Style************************/
+.post-category {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    color: #b4ad9e;
+    text-transform: uppercase;
+}
+
+.post-title {
+    font-size: 30px;
+}
+.post-title a{
+    color: #626262;
+}
+
+.post-title a:hover{
+    color: #000;
+}
+
+.post-description {
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left;
+    color: #626262;
+}
+
+/*==================End Post base style===================*/
+
+/********************First Post*************************/
+.first-post {
+    margin: 72px 0 0 0;
+}
+
+.first-post img {
+    height: auto;
+    width: 100%;
+
+    max-width: 1061px;
+}
+
+.first-post__content {
+    margin: 99px 89px 0 80px;
+}
+
+.content__category {
+}
+
+.content__title {
+    margin: 28px 0 0 0;
+}
+
+.content__description {
+    margin: 26px 0 0 0;
+}
+
+.content__link {
+    margin: 52px 0 0 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.content__link a {
+    color: #b4ad9e;
+}
+
+/*======================End First post===================/
+
+
+/*******************Posts*******************************/
+
+.posts {
+
+}
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.posts-list {
+    margin: 125px 80px 0 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.posts-button-load-more {
+    margin: 165px 0 0 0;
+}
+.posts-button-load-more button{
+    font-size: 20px;
+    background: transparent;
+    padding: 16px 31px 17px 31px;
+    border: solid 1px #626262;
+    color: #626262;
+}
+
+.posts-list__element {
+    max-width: 420px;
+}
+
+.posts-list__element:nth-last-child(n+2) {
+    margin: 0 0 132px 0;
+    max-width: 420px;
+}
+
+.posts-list__element:nth-child(odd) {
+    margin: 0 60px 0 0;
+}
+
+.element__image {
+    width: 100%;
+    max-width: 420px;
+}
+
+.element__category {
+    margin: 32px 0 0 0;
+}
+
+.element__title {
+    margin: 28px 0 0 0;
+}
+
+.element__description {
+    margin: 31px 0 0 0;
+    display: block;
+}
+
+/*=================End Posts============================*/
+
+/**************Subscribe*******************/
+
+
+.subscribe {
+    margin: 122px 0 0 0;
+    background-color: #f0f0f0;
+}
+
+.subscribe-content {
+    padding: 73px 0 74px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe-content__title {
+    font-size: 30px;
+    letter-spacing: 0.75px;
+    color: #333333;
+}
+
+.subscribe-content__subscribe-form {
+    margin: 72px 0 0 0;
+}
+
+.subscribe-form__input-label {
+    position: relative;
+}
+
+.subscribe-form__input {
+    width: 400px;
+    height: 40px;
+    background: transparent;
+    border-bottom: solid 1px #000000;
+}
+
+.subscribe-form__input::placeholder {
+    padding: 0 0 0 2px;
+}
+
+.subscribe-form__submit-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+}
+
+/*==============End Subscribe=========================*/
+
+
+/****************Footer********************/
+.footer {
+    margin: 121px 0 0 0;
+    padding: 40px 0 42px 0;
+    background-color: #f0f0f0;
+}
+
+.footer__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row__nav {
+    margin: 0 0 0 80px;
+    display: flex;
+}
+
+.row__nav li {
+    margin: 0 17px 0 0;
+}
+
+.row__nav a {
+    color: #000000;
+}
+
+.row__nav li:last-child {
+    margin: 0;
+}
+
+.row__follow {
+    display: flex;
+}
+
+.follow__title {
+    margin: 0 21px 0 0;
+    color: #000000;
+
+}
+
+.follow__list {
+    display: flex;
+}
+
+.follow__list li {
+    margin: 0 17px 0 0;
+}
+
+.follow__list li:last-child {
+    margin: 0;
+}
+
+/*====================End Footer====================*/
